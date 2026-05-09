@@ -22,4 +22,4 @@ COPY --from=build /app/out .
 
 # The only thing you might need to check: 
 # Ensure the DLL name below EXACTLY matches your project's output name (case-sensitive)
-ENTRYPOINT ["dotnet", "SalvadorLibraryNowAPI1.dll"]
+ENTRYPOINT ["dotnet", "SalvadorLibraryNowAPI.dll"]
