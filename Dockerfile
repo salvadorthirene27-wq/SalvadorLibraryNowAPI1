@@ -12,4 +12,4 @@ RUN dotnet publish "SalvadorLibraryNowAPI1/SalvadorLibraryNowAPI1.csproj" -c Rel
 FROM base AS final
 WORKDIR /app
 COPY --from=build /app/out .
-ENTRYPOINT ["dotnet","SalvadorLibraryNowAPI.dll"]
+ENTRYPOINT ["dotnet","SalvadorLibraryNowAPI1.dll"]
